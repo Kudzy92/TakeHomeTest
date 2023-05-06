@@ -21,5 +21,8 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>HammingBitsChecker</finalName>
+    </build>
 
 </project>
