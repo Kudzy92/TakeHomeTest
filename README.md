@@ -6,6 +6,6 @@
 
    
 
-## worst-case space complexity of my solution.
+## Worst-case space complexity of my solution.
 
 The implementation of the method that can get the corrupted bit position
