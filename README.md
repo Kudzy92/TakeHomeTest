@@ -90,14 +90,19 @@ public class recursion {
 ### Corrections
 1. ClassName should start with uppercase and more meaningful  ``` public class recursion  ``` to ``` public class ReverseStringAndFibonacci { ```
 2. Functions names should be uppercase and meaningful no wild chars supported like underscores ``` reverse_string ``` to  ```reverseString ```
-3. No need to return empty string. You should test whether the string is empty then you just return once. ``` if (!myStr.isEmpty()){
+3. No need to return empty string. You should test whether the string is empty then you just return once.
+ ``` if (!myStr.isEmpty()){
         System.out.println("String in now Empty");
     return myStr;
         
-    } ``` to ``` if (!myStr.isEmpty()){
+    } 
+```
+ to
+ ``` if (!myStr.isEmpty()){
         
    str=myStr;
         
-    } ```
+    } 
+```
 
 
