@@ -1,5 +1,5 @@
-## Section A
-
+# Section A: Code Review
+## OPTION 1 
 ```python
 class Solution:
        def groupAnagrams(self, strs):
@@ -33,3 +33,9 @@ class Solution:
          return list(result.values())
 ob1 = Solution()
 print(ob1.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+
+
+
+## OPTION TASK 2
+
+
