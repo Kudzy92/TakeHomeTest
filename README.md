@@ -129,7 +129,47 @@ public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
 ```
 4. Every time you write code you should write test cases especially unit testing for each method
  ```java
- void isThe Func
+ void isTheReversStringWorking(){
+ var obj=new ClassnameToBeTested();
+ assertEquals("Java is awesome",obj.reverseStrin("emosewA si avaJ"));
+ }
+ ```
+ 5. Always apply OOP principles such as Abstraction, encapsulation, polymorphism, and inheritance.
+ 6. Implementing generics data types was the best practice
+ 
+ ## Final Solution
+ ```java
+ public class ReverseStringAndFibonacci {
+  public static void main(String[] args) {
+		 String myStr = "emosewA si avaJ";
+		 String reversed = reverse_string(myStr);
+		 fabonacciSequenceCreator();
+		 System.out.println("The reversed string is: " + reversed + "\nFibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34 ");
+	}
+	public static String reverseString() {
+	 String str="";
+    if (!myStr.isEmpty()){
+   str=reverseString(myStr.substring(1)) + myStr.charAt(0);   
+    }
+return str;
+	}
+	public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
+			int previousNumber = 0;
+		int nextNumber = 1;
+		
+	    System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
+ 
+	for (int i = 1; i <= (int) maxNumber; ++i){
+	    int sum = previousNumber + nextNumber;
+	    previousNumber = nextNumber;
+	    nextNumber = sum;
+	    }
+ }
+	
+ }
+ 
+ ```
+ 
 
 
 
