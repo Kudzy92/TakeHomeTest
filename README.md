@@ -178,7 +178,7 @@ public static <T extends Number > String fabonacciSequenceCreator(T maxNumber) {
 	
 Kindly visit the link below
 	
-[[https://localhost:3000](https://github.com/Kudzy92/Java-Code/tree/Fabonacci-Sequence-And-String-Reverse)]([https://localhost:3000](https://github.com/Kudzy92/Java-Code/tree/Fabonacci-Sequence-And-String-Reverse))
+[(https://github.com/Kudzy92/Java-Code/tree/Fabonacci-Sequence-And-String-Reverse)](https://github.com/Kudzy92/Java-Code/tree/Fabonacci-Sequence-And-String-Reverse)
  
 
 
