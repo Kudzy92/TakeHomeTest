@@ -99,9 +99,11 @@ public class recursion {
 ```
  to
  ```java 
-if (!myStr.isEmpty()){   
-   str=myStr;    
-    } 
+ String str="";
+    if (!myStr.isEmpty()){
+   str=reverseString(myStr.substring(1)) + myStr.charAt(0);   
+    }
+return str;
 ```
 
 
