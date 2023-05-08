@@ -105,5 +105,28 @@ public class recursion {
     }
 return str;
 ```
+3. Don't declare variables with same names more than once per class or remove it completely and extends a generic data type <T> should extends a Number for type safety i.e < T extends Number >
+```java
+public static <T> void function(T maxNumber) {
+		// Set it to the number of elements you want in the Fibonacci Series
+		int maxNumber = 10; 
+```
+change to
+
+```java
+public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
+			int previousNumber = 0;
+		int nextNumber = 1;
+		
+	    System.out.print("Fibonacci Series of "+lastNumber+" numbers:");
+ 
+	for (int i = 1; i <= (int) maxNumber; ++i){
+	    int sum = previousNumber + nextNumber;
+	    previousNumber = nextNumber;
+	    nextNumber = sum;
+	    }
+ }
+```
+
 
 
