@@ -127,6 +127,9 @@ public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
 	    }
  }
 ```
+4. Every time you write code you should write test cases especially unit testing for each method
+ ```java
+ void isThe Func
 
 
 
