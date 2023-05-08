@@ -38,26 +38,26 @@ print(ob1.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
 
 ## Option 2: JAVA Task
 ```java
-1. public class recursion {
+public class recursion {
  
-	1. public static void main(String[] args) {
+	 public static void main(String[] args) {
  
 		// Saves the string that would be reversed
-		1. String myStr = "emosewA si avaJ";
+		 String myStr = "emosewA si avaJ";
  
  
 		//create Method and pass and input parameter string 
-		1. String reversed = reverse_string(myStr);
-		1. System.out.println("The reversed string is: " + reversed + "\nFibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34 ");
+		 String reversed = reverse_string(myStr);
+		 System.out.println("The reversed string is: " + reversed + "\nFibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34 ");
 	
 
 	}
  
  
 	//Method take string parameter and check string is empty or not
-	1. public static String reverse_string(String myStr)
+	 public static String reverse_string(String myStr)
 	{
-		1. if (myStr.isEmpty()){
+		 if (myStr.isEmpty()){
 		 System.out.println("String in now Empty");
 		 return myStr;
 		}
@@ -87,5 +87,7 @@ print(ob1.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
  
 }
 ```
+### Corrections
+1. ClassName should start with uppercase and more meaningful  ``` public class recursion  ``` to ``` public class ReverseStringAndFibonacci { ```
 
 
