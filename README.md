@@ -141,6 +141,7 @@ public static <T extends Number > String fabonacciSequenceCreator(T maxNumber) {
  
  ## Final Solution
  ```java
+ public class ReverseStringAndFibonacci {
 public static void main(String[] args) {
    	 String myStr = "emosewA si avaJ";
    	 String reversed = reverseString(myStr);
