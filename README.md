@@ -105,7 +105,7 @@ public class recursion {
     }
 return str;
 ```
-3. Don't declare variables with same names more than once per class or remove it completely and extends a generic data type <T> should extends a Number for type safety i.e < T extends Number >
+3. Don't declare variables with same names more than once per class or remove it completely and extends a generic data type <T> should extends a Number for type safety i.e < T extends Number > then the function should return a string
 ```java
 public static <T> void function(T maxNumber) {
 		// Set it to the number of elements you want in the Fibonacci Series
@@ -114,18 +114,20 @@ public static <T> void function(T maxNumber) {
 change to
 
 ```java
-public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
-			int previousNumber = 0;
-		int nextNumber = 1;
-		
-	    System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
- 
-	for (int i = 1; i <= (int) maxNumber; ++i){
-	    int sum = previousNumber + nextNumber;
-	    previousNumber = nextNumber;
-	    nextNumber = sum;
-	    }
- }
+public static <T extends Number > String fabonacciSequenceCreator(T maxNumber) {
+   		int previousNumber = 0;
+   	int nextNumber = 1;
+   	String str="";
+       System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
+
+   for (int i = 1; i <= (int) maxNumber; ++i) {
+       int sum = previousNumber + nextNumber;
+       previousNumber = nextNumber;
+       nextNumber = sum;
+       if((int) nextNumber<= (int) maxNumber && (int) nextNumber>0){
+     str+=", "+nextNumber;
+       }
+    }
 ```
 4. Every time you write code you should write test cases especially unit testing for each method
  ```java
@@ -139,32 +141,33 @@ public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
  
  ## Final Solution
  ```java
- public class ReverseStringAndFibonacci {
-  public static void main(String[] args) {
-		 String myStr = "emosewA si avaJ";
-		 String reversed = reverse_string(myStr);
-		 fabonacciSequenceCreator();
-		 System.out.println("The reversed string is: " + reversed + "\nFibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34 ");
-	}
-	public static String reverseString() {
-	 String str="";
-    if (!myStr.isEmpty()){
-   str=reverseString(myStr.substring(1)) + myStr.charAt(0);   
-    }
+public static void main(String[] args) {
+   	 String myStr = "emosewA si avaJ";
+   	 String reversed = reverseString(myStr);
+   	 fabonacciSequenceCreator(100);
+   	System.out.println("The reversed string is: " + reversed + "\nFibonacci Series "+fabonacciSequenceCreator(100));
+   }
+   public static String reverseString(String myStr) {
+    String str="";
+   if (!myStr.isEmpty()){
+  str=reverseString(myStr.substring(1)) + myStr.charAt(0);   
+   }
 return str;
-	}
-	public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
-			int previousNumber = 0;
-		int nextNumber = 1;
-		
-	    System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
- 
-	for (int i = 1; i <= (int) maxNumber; ++i){
-	    int sum = previousNumber + nextNumber;
-	    previousNumber = nextNumber;
-	    nextNumber = sum;
-	    }
- }
+   }
+public static <T extends Number > String fabonacciSequenceCreator(T maxNumber) {
+   		int previousNumber = 0;
+   	int nextNumber = 1;
+   	String str="";
+       System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
+
+   for (int i = 1; i <= (int) maxNumber; ++i) {
+       int sum = previousNumber + nextNumber;
+       previousNumber = nextNumber;
+       nextNumber = sum;
+       if((int) nextNumber<= (int) maxNumber && (int) nextNumber>0){
+     str+=", "+nextNumber;
+       }
+    }
 	
  }
  
