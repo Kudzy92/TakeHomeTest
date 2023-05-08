@@ -118,7 +118,7 @@ public static <T extends Number > void fabonacciSequenceCreator(T maxNumber) {
 			int previousNumber = 0;
 		int nextNumber = 1;
 		
-	    System.out.print("Fibonacci Series of "+lastNumber+" numbers:");
+	    System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
  
 	for (int i = 1; i <= (int) maxNumber; ++i){
 	    int sum = previousNumber + nextNumber;
