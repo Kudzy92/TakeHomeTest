@@ -20,6 +20,6 @@ Open [https://github.com/Kudzy92/anniesdesign-backend](https://github.com/Kudzy9
 2. #### `open the below link to the browser`
    [https://localhost:3001](https://localhost:3001)
 
-Preview Link.
+### Preview Link.
 
-Open [https://anniesdesign-front.vercel.app](https://anniesdesign-front.vercel.app) to preview.
+Open [http://luxurydesign-client.vercel.app/](http://luxurydesign-client.vercel.app/) to preview.
